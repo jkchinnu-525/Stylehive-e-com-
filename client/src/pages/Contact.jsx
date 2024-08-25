@@ -3,7 +3,7 @@ export default function Contact() {
     <div className="body-font min-h-screen relative bg-white dark:bg-black text-black dark:text-white ">
       <div className=" mx-auto px-5 py-24">
         <div className="mb-12 flex w-full flex-col text-center">
-          <h1 className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">
+          <h1 className="title-font mb-4 text-2xl font-medium sm:text-3xl">
             Contact Us
           </h1>
           <p className="mx-auto lg:w-2/3">
