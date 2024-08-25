@@ -12,7 +12,7 @@ app.use(express.json());
 const corsOptions = {
   origin: ["https://stylehive.onrender.com"],
   methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type", "Authorization"],
+  allowedHeaders: ["Content-Type", "application/json"],
   optionsSuccessStatus: 200,
 };
 
