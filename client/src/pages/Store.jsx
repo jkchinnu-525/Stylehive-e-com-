@@ -26,7 +26,7 @@ export default function Store() {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/product", {
+        const response = await axios.get("https://stylehive.onrender.com/api/product", {
           headers: {
             "Content-Type": "application/json",
           },
