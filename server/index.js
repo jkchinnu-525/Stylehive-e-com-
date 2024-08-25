@@ -20,6 +20,7 @@ app.use(cors(corsOptions));
 mongoose
   .connect(process.env.Mongo_Url)
   .then(() => console.log("Connected to MongoDB"));
+app.use("/api", userRoute);
 
 const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, "/client/dist")));
@@ -28,4 +29,3 @@ app.get("*", (req, res) => {
 });
 app.listen(3000, () => console.log("Server running on port 3000"));
 
-app.use("/api", userRoute);
