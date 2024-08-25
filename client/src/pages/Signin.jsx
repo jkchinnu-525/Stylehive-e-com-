@@ -17,10 +17,13 @@ export default function Signin() {
     try {
       setLoading(true);
       setError(false);
-      const response = await axios.post("http://localhost:3000/api/signin", {
-        email: Data["email"],
-        password: Data["password"],
-      });
+      const response = await axios.post(
+        "https://stylehive.onrender.com/api/signin",
+        {
+          email: Data["email"],
+          password: Data["password"],
+        }
+      );
       if (response.success) {
         setLoading(false);
       }
@@ -40,10 +43,7 @@ export default function Signin() {
               Login
             </div>
             <div>
-              <form
-                onSubmit={handleSubmit}
-                className="block text-lg  text-black"
-              >
+              <form onSubmit={handleSubmit} className="block text-lg">
                 <span className="font-medium mb-2 pt-2">Email</span>
                 <input
                   type="text"

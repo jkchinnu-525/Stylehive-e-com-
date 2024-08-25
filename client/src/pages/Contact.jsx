@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="body-font h-screen relative bg-white dark:bg-black text-black dark:text-white ">
+    <div className="body-font min-h-screen relative bg-white dark:bg-black text-black dark:text-white ">
       <div className=" mx-auto px-5 py-24">
         <div className="mb-12 flex w-full flex-col text-center">
           <h1 className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">
@@ -12,7 +12,7 @@ export default function Contact() {
           </p>
         </div>
         <div className="mx-auto md:w-2/3 lg:w-32">
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap justify-center">
             <form action="https://formspree.io/f/meojkyod" method="post">
               <div className="p-2">
                 <div className="relative">
@@ -20,7 +20,7 @@ export default function Contact() {
                     type="text"
                     id="name"
                     name="Name"
-                    className="peer w-full rounded-lg border border-gray-700 dark:bg-black dark:bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent "
+                    className="peer w-full rounded-lg border border-gray-700 dark:bg-black dark:bg-opacity-40 py-1 px-3 text-base leading-8 placeholder-transparent "
                     placeholder="Name"
                     required
                   />
@@ -38,7 +38,7 @@ export default function Contact() {
                     type="email"
                     id="email"
                     name="Email"
-                    className="peer w-full rounded border border-gray-700 dark:bg-black bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none"
+                    className="peer w-full rounded border border-gray-700 dark:bg-black bg-opacity-40 py-1 px-3 text-base leading-8 placeholder-transparent outline-none"
                     placeholder="Email"
                     required
                   />
@@ -56,7 +56,7 @@ export default function Contact() {
                     type="message"
                     id="message"
                     name="Message"
-                    className="peer h-40 resize-none rounded border border-gray-700 dark:bg-black bg-opacity-40 py-1 px-3 text-base leading-6 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+                    className="peer h-40 resize-none rounded border border-gray-700 dark:bg-black bg-opacity-40 py-1 px-3 text-base leading-6 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:ring-2"
                     placeholder="Message"
                     required
                   ></textarea>

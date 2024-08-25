@@ -26,12 +26,14 @@ export default function Store() {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const response = await axios.get("https://stylehive.onrender.com/api/product", {
-          headers: {
-            "Content-Type": "application/json",
-          },
-          timeout: 5000,
-        });
+        const response = await axios.get(
+          "https://stylehive.onrender.com/api/product",
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
         if (Array.isArray(response.data)) {
           setProducts(response.data);
           setfilteredProducts(response.data);
@@ -101,7 +103,7 @@ export default function Store() {
     dispatch(addToCart(product));
   };
   return (
-    <div className="bg-white dark:bg-black text-black dark:text-white">
+    <div className="bg-white min-h-screen dark:bg-black text-black dark:text-white">
       <div>
         <p className="flex pb-10 justify-center text-2xl pt-7 font-semibold">
           All Products

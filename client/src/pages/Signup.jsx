@@ -16,10 +16,13 @@ export default function Auth() {
     try {
       setLoading(true);
       setError(false);
-      const response = await axios.post("http://localhost:3000/api/signup", {
-        email: Data["email"],
-        password: Data["password"],
-      });
+      const response = await axios.post(
+        "https://stylehive.onrender.com/api/signup",
+        {
+          email: Data["email"],
+          password: Data["password"],
+        }
+      );
       if (response.success) {
         setLoading(false);
       }
@@ -36,10 +39,7 @@ export default function Auth() {
           <div className="h-max rounded-lg">
             <div className="text-3xl font-extrabold">Create Your account</div>
             <div className="mt-8">
-              <form
-                onSubmit={handleSubmit}
-                className="block text-lg text-black"
-              >
+              <form onSubmit={handleSubmit} className="block text-lg">
                 <span className="font-medium text-gray-400 mb-2 pt-2">
                   Email
                 </span>
