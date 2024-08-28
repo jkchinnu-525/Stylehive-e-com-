@@ -5,7 +5,7 @@ export default function Cart() {
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.items);
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
-  const totalAmount = useSelector((state) => state.cart.items.reduce((acc, item) => acc + item.totalPrice, 0);
+  const totalAmount = useSelector((state) => state.cart.items.reduce((acc, item) => acc + item.totalPrice, 0));
 
   const removeItemsHandler = (id) => {
     dispatch(removeFromCart(id));
