@@ -32,7 +32,6 @@ StyleHive is a dynamic and modern clothing website designed to offer users a sea
 ### Clone the Repository
 ```
 https://github.com/jkchinnu-525/Stylehive-e-com-.git
-cd task 
 ```
 ## Build
 ```
