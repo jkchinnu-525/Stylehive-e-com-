@@ -1,11 +1,11 @@
-# Weather Application
+#StyleHive
 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [Dependencies](#InstallDependenciesAndBuild)
+- [Dependencies](#Install)
 - [Configuration](#configuration)
 - [Deployment](#deployment)
 
