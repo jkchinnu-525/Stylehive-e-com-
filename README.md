@@ -1,11 +1,11 @@
-- # StyleHive
+# StyleHive
 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [Build](#install)
+- [Build](#build)
 - [Configuration](#configuration)
 - [Deployment](#deployment)
 
