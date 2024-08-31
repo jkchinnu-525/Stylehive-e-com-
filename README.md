@@ -1,11 +1,11 @@
-#StyleHive
+- # StyleHive
 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [Dependencies](#Install)
+- [Build](#install)
 - [Configuration](#configuration)
 - [Deployment](#deployment)
 
@@ -34,7 +34,7 @@ StyleHive is a dynamic and modern clothing website designed to offer users a sea
 https://github.com/jkchinnu-525/Stylehive-e-com-.git
 cd task 
 ```
-## Install Dependencies And Build
+## Build
 ```
 npm install
 npm run build
